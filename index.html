@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sewa Kamera</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Sewa Kamera</h1>
+    <button id="cartBtn">🛒 Keranjang (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <main>
+    <div id="productGrid" class="grid"></div>
+    <div class="pagination">
+      <button id="prevBtn">⬅️ Sebelumnya</button>
+      <span id="pageInfo"></span>
+      <button id="nextBtn">Berikutnya ➡️</button>
+    </div>
+  </main>
+
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Keranjang Belanja</h2>
+      <ul id="cartItems"></ul>
+      <a href="checkout.html" class="checkoutBtn">Checkout</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
